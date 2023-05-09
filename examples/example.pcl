@@ -1,0 +1,16 @@
+n_fact = ?;
+if (n_fact > 12) {
+  print -1;
+  n_fact = 0;
+}
+curr = 1;
+while (curr <= n_fact) {
+  res = 1;
+  cnt = 1;
+  while (cnt <= curr) {
+    res = res * cnt;
+    cnt++;
+  }
+  print res;
+  curr++;
+}
